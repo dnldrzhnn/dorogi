@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/common.css">
+  <title>home</title>
+<link href="/css/common.css" rel="stylesheet"></head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__navBar navBar "> 
+        <div class="navBar__logo">
+          <a href="index.html"><img class="navBar__logo_elem" src="img/logo.png" alt="logo"></a>
+        </div>
+        <div class="navBar__row onclick">
+          <nav class="navBar__links">
+            <div class="navBar__item navBar__item_dropdown">
+              <a href="#" class="navBar__link navBar__link_dropdown">Каталог
+                <span class="navBar__dropdown_shape">
+                  <img src="img/shape.png" alt="shape">
+                </span>
+              </a>
+              <div class="navBar__dropdown dropdown">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">
+                      Стандартные дорожные знаки
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">
+                      Светодиодные дорожные знаки
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">
+                      Заградительные светодиодные знаки
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">
+                      Временные дорожные знаки
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">
+                      Знаки пожарной безопасности
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="navBar__item">
+              <a href="#" class="navBar__link">
+                Прайс
+              </a>
+            </div>
+            <div class="navBar__item">
+              <a href="#" class="navBar__link">
+                Информация
+              </a>
+            </div>
+            <div class="navBar__item">
+              <a href="#" class="navBar__link">
+                Доставка
+              </a>
+            </div>
+            <div class="navBar__item">
+              <a href="#" class="navBar__link">Контакты</a>
+            </div>
+          </nav>
+          <div class="navBar__download download">
+            <span>
+              <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.2825 8.58468H19.7062V5.80404C19.7062 5.78671 19.7035 5.76924 19.7014 5.75151C19.7005 5.64121 19.6651 5.53278 19.5895 5.44686L14.962 0.160951C14.9606 0.159594 14.9592 0.159113 14.9583 0.157668C14.9307 0.126852 14.8986 0.101202 14.8645 0.0790529C14.8545 0.072312 14.8443 0.0666653 14.8338 0.0607123C14.8043 0.0447354 14.773 0.0312972 14.7409 0.0216236C14.7322 0.0193474 14.7243 0.0157581 14.7157 0.0134819C14.6807 0.00516514 14.6444 0 14.6077 0H3.23538C2.71611 0 2.29423 0.42236 2.29423 0.941194V8.58442H1.71802C0.975154 8.58442 0.372803 9.18655 0.372803 9.92968V16.925C0.372803 17.6674 0.975154 18.2702 1.71802 18.2702H2.29423V23.0588C2.29423 23.5777 2.71611 24 3.23538 24H18.7648C19.2836 24 19.7059 23.5777 19.7059 23.0588V18.2702H20.2822C21.0249 18.2702 21.6273 17.6678 21.6273 16.9251V9.92994C21.6274 9.1866 21.0253 8.58468 20.2825 8.58468ZM3.23538 0.941194H14.1371V5.75642C14.1371 6.01643 14.3479 6.22701 14.6077 6.22701H18.7648V8.58464H3.23538V0.941194ZM12.7698 13.7735C11.8452 13.4513 11.2418 12.9398 11.2418 12.1301C11.2418 11.1803 12.0346 10.4537 13.348 10.4537C13.9753 10.4537 14.438 10.5856 14.768 10.7344L14.4874 11.75C14.2646 11.6429 13.8682 11.4857 13.3232 11.4857C12.7781 11.4857 12.5139 11.7335 12.5139 12.0226C12.5139 12.3778 12.8278 12.5346 13.5461 12.8071C14.5286 13.1706 14.9911 13.6825 14.9911 14.4669C14.9911 15.4003 14.2726 16.1931 12.7448 16.1931C12.1091 16.1931 11.4815 16.0281 11.1676 15.8544L11.4234 14.814C11.7621 14.9872 12.2825 15.161 12.8191 15.161C13.3977 15.161 13.7028 14.9215 13.7028 14.558C13.703 14.2114 13.4388 14.0129 12.7698 13.7735ZM10.6399 15.0533V16.1107H7.16269V10.544H8.4267V15.0533H10.6399ZM3.12508 16.1107H1.68821L3.2985 13.2938L1.74577 10.5438H3.19117L3.67814 11.5597C3.84334 11.8983 3.9673 12.1705 4.09958 12.4848H4.11565C4.24815 12.1296 4.35539 11.8819 4.49537 11.5597L4.96619 10.5438H6.4031L4.83395 13.2605L6.48592 16.1102H5.03259L4.52855 15.1025C4.32243 14.7149 4.19019 14.4256 4.03322 14.1035H4.01681C3.90103 14.4256 3.76096 14.7149 3.58736 15.1025L3.12508 16.1107ZM18.7648 22.804H3.23538V18.2702H18.7648V22.804H18.7648ZM18.7733 16.1107L18.2694 15.103C18.063 14.715 17.9309 14.4261 17.7739 14.1039H17.7579C17.6421 14.4261 17.5015 14.715 17.3278 15.103L16.8659 16.1107H15.4286L17.0389 13.2938L15.4863 10.5438H16.9316L17.4192 11.5597C17.5842 11.8983 17.7078 12.1705 17.8402 12.4848H17.8567C17.9886 12.1296 18.0957 11.8819 18.2363 11.5597L18.7069 10.5438H20.1442L18.575 13.2605L20.2266 16.1102H18.7733V16.1107Z" fill="#219653"/>
+              </svg>              
+            </span>
+            <a class="navBar__download_link download_link" href="#">Скачать прайс</a>
+          </div>
+          <div class="navBar__contact">
+            <div class="navBar__number">
+              <span>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.1252 11.2422C14.4826 10.6002 13.6713 10.6002 13.0207 11.2422C12.5307 11.7318 12.0315 12.2224 11.5496 12.7201C11.4225 12.8552 11.3046 12.8898 11.1439 12.7963C10.8227 12.6186 10.4851 12.4845 10.1812 12.2905C8.74362 11.3956 7.54397 10.2386 6.48766 8.93841C5.96307 8.29644 5.49032 7.60369 5.16906 6.82764C5.10095 6.66715 5.11823 6.56557 5.24531 6.43962C5.74449 5.96627 6.22537 5.47667 6.70726 4.98706C7.38334 4.30345 7.38334 3.50912 6.70726 2.8255C6.32703 2.43748 5.93867 2.05758 5.54929 1.66854C5.15178 1.27137 4.76342 0.87522 4.35777 0.478054C3.70712 -0.154772 2.89583 -0.163914 2.24517 0.478054C1.74701 0.967655 1.27325 1.4664 0.765936 1.94788C0.301325 2.39481 0.0644447 2.93622 0.013612 3.56905C-0.062637 4.59904 0.19051 5.57012 0.546339 6.52494C1.28138 8.49249 2.38851 10.2315 3.73253 11.8283C5.55031 13.9898 7.72188 15.7045 10.2655 16.9376C11.4062 17.4943 12.5988 17.926 13.8828 17.993C14.7622 18.0438 15.5389 17.8244 16.156 17.1316C16.579 16.6583 17.0517 16.2367 17.5001 15.7806C18.168 15.1133 18.168 14.3027 17.4919 13.6099C16.705 12.8126 15.9192 12.0274 15.1252 11.2422Z" fill="#FFB71B"/>
+                </svg>                
+              </span>
+              <a class="navBar__link_call" href="tel:8999999999">8(8412)71-03-30</a>
+            </div>
+            <div class="navBar__number">
+              <span>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.1252 11.2422C14.4826 10.6002 13.6713 10.6002 13.0207 11.2422C12.5307 11.7318 12.0315 12.2224 11.5496 12.7201C11.4225 12.8552 11.3046 12.8898 11.1439 12.7963C10.8227 12.6186 10.4851 12.4845 10.1812 12.2905C8.74362 11.3956 7.54397 10.2386 6.48766 8.93841C5.96307 8.29644 5.49032 7.60369 5.16906 6.82764C5.10095 6.66715 5.11823 6.56557 5.24531 6.43962C5.74449 5.96627 6.22537 5.47667 6.70726 4.98706C7.38334 4.30345 7.38334 3.50912 6.70726 2.8255C6.32703 2.43748 5.93867 2.05758 5.54929 1.66854C5.15178 1.27137 4.76342 0.87522 4.35777 0.478054C3.70712 -0.154772 2.89583 -0.163914 2.24517 0.478054C1.74701 0.967655 1.27325 1.4664 0.765936 1.94788C0.301325 2.39481 0.0644447 2.93622 0.013612 3.56905C-0.062637 4.59904 0.19051 5.57012 0.546339 6.52494C1.28138 8.49249 2.38851 10.2315 3.73253 11.8283C5.55031 13.9898 7.72188 15.7045 10.2655 16.9376C11.4062 17.4943 12.5988 17.926 13.8828 17.993C14.7622 18.0438 15.5389 17.8244 16.156 17.1316C16.579 16.6583 17.0517 16.2367 17.5001 15.7806C18.168 15.1133 18.168 14.3027 17.4919 13.6099C16.705 12.8126 15.9192 12.0274 15.1252 11.2422Z" fill="#FFB71B"/>
+                </svg>                
+              </span>
+              <a class="navBar__link_call" href="tel:8999999999">8(8412)25-70-04</a>
+            </div>
+          </div>
+        </div> 
+        <div class="navBar__burger onclick">
+          <button class="navBar__btn">
+            <span class="navBar__btn_span"></span>
+            <span class="navBar__btn_span"></span>
+            <span class="navBar__btn_span"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section notMargin">
+    <div class="intro">
+      <div class="intro__bg">
+        <!-- <video autoplay="autoplay" muted="muted" loop="loop" controls="controls" poster="../src/assets/bigSign.png"> 
+          <source src="../src/assets/video.mp4" type="video/mp4"> 
+        </video> --><!--Вопрос-->
+        <!--  video{
+            width: 100%;
+             height: 100%;
+           } -->
+        <img src="img/doroga.jpg" alt="">
+      </div>
+      <div class="intro__text">
+        <div class="intro__title">
+          Производство и продажа <span class="intro__title_yellow">дорожных знаков</span> в Пензе
+        </div>
+        <div class="intro__subtitle">
+          Производство в соответствии ГОСТу. Доставка по всей территории России.
+        </div>
+        <button type="button" id="open" class="intro__btn btn">
+          <a class="intro__btn_link btn__link" href="#">Оставить заявку</a>
+        </button>
+        <div class="modal" id="modal">
+          <div class="modal__opac"></div>
+          <div class="modal__window">
+              <button id="close" class="modal__close"><span class="close__elem">X</span></button>  
+              <form class="modal__form form" action="">
+                <div class="form__heading heading">
+                  <h2 class="heading__text">Оставьте заявку</h2>
+                </div>
+                <div class="form__clue text">
+                  Внесите данные в форму
+                </div>
+                <input type="text" class="form__name form__input"  placeholder="Ваше имя" required>
+                <input type="number" class="form__number form__input"  placeholder="Ваш телефон" required>
+                <input type="email" class="form__email form__input"  placeholder="Ваш email" required>
+                <textarea name="form__text" class="form__text" id="text" placeholder="Текст заявки"></textarea>
+                <div class="form__subtitle">      
+                  *Важно! Заявка оставляется в форме: <br>
+                  1. Название. 2. Типоразмер знака. 3. Тип плёнки 
+                  4. Временный/постоянный. 5. Кол-во         
+                </div> 
+                <a href="#" class="form__link section__link">Прикрепить свой файл</a>
+                <button type="submit" class="form__btn btn">
+                  отправить
+                </button>
+                <div class="form__sogl">
+                  Нажимая кнопку, вы даете согласие на обработку <a href="#" class="form__sogl_link">персональных данных</a>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="types">
+        <div class="types__cell">
+          <div class="types__image">
+            <img src="img/sign1.png" alt="type">
+          </div>
+          <p class="types__text">Стандартные дорожные знаки</p>
+        </div>
+        <div class="types__cell">
+          <div class="types__image">
+            <img src="img/sign2.png" alt="type">
+          </div>
+          <p class="types__text">Светодиодные дорожные знаки</p>
+        </div>
+        <div class="types__cell">
+          <div class="types__image">
+            <img src="img/sign3.png" alt="type">
+          </div>
+          <p class="types__text">Заградительные светодиодные знаки</p>
+        </div>
+        <div class="types__cell">
+          <div class="types__image">
+            <img src="img/sign4.png" alt="type">
+          </div>
+          <p class="types__text">Временные дорожные знаки</p>
+        </div>
+        <div class="types__cell">
+          <div class="types__image">
+            <img src="img/sign5.png" alt="type">
+          </div>
+          <p class="types__text">Знаки пожарной безопасности</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="price">
+      <div class="container">
+        <div class="price__texts">
+          <div class="price__heading heading">
+            <h2 class="heading__text">
+              Прайс-лист
+            </h2>
+          </div>
+          <div class="price__text text">
+            Наша продукция соответствует техническому регламенту Таможенного союза ТР ТС 014/2011
+            «О безопасности автомобильных дорог» и имеет соответствующий сертификат.
+            <div class="price__text_margin">Все дорожные знаки производятся в четком соответствии ГОСТ 52290-2004 и ГОСТ 32945-2014</div>
+          </div>
+        </div>
+      </div>
+      <div class="price__blockScroll blockScroll">
+        <div class="price__chapter">
+          <table class="price__table table">
+              <thead class="table__header">
+                <tr class="table__headerRow">
+                  <th class="table__hCell">
+                    Знаки
+                  </th>
+                  <th class="table__hCell">
+                    <div class="table__title">
+                      <a class="table__hcell_link" href="#">Пленка инженерная, тип А</a>
+                    </div>
+                    <div class="table__box">
+                      <div class="table__subtitle"><a class="table__hcell_link" href="#">II типоразмер</a></div>
+                      <div class="table__subtitle"><a class="table__hcell_link" href="#">III типоразмер</a></div>
+                    </div>
+                  </th>
+                  <th class="table__hCell">
+                    <div class="table__title">
+                      <a class="table__hcell_link" href="#">Пленка инженерная, тип B</a>
+                    </div>
+                    <div class="table__box">
+                      <div class="table__subtitle"><a class="table__hcell_link" href="#">II типоразмер</a></div>
+                      <div class="table__subtitle"><a class="table__hcell_link" href="#">III типоразмер</a></div>
+                    </div>
+                  </th>
+                  <th class="table__hCell">
+                    <div class="table__title">
+                      <a class="table__hcell_link" href="#">Пленка инженерная, тип C</a>
+                    </div>
+                    <div class="table__box">
+                      <div class="table__subtitle"><a class="table__hcell_link" href="#">II типоразмер</a></div>
+                      <div class="table__subtitle"><a class="table__hcell_link" href="#">III типоразмер</a></div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__bodyRow">
+                  <td class="table__bCell table__ptab">
+                    <div class="table__sign">
+                      <a href="#" class="table__sign_link">
+                        <div class="table__sign_image">
+                          <img src="img/triangle.png" alt="sign">
+                        </div>
+                        <div class="table__sing_name">
+                          Все треугольные знаки
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1250
+                      </div>
+                      <div class="table__value">
+                        1800
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1950
+                      </div>
+                      <div class="table__value">
+                        2970
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        2550
+                      </div>
+                      <div class="table__value">
+                        4450
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__bodyRow">
+                  <td class="table__bCell table__ptab">
+                    <div class="table__sign">
+                      <a href="#" class="table__sign_link">
+                        <div class="table__sign_image">
+                          <img src="img/circle.png" alt="sign">
+                        </div>
+                        <div class="table__sing_name">
+                          Все круглые знаки
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1300
+                      </div>
+                      <div class="table__value">
+                        1900
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1980
+                      </div>
+                      <div class="table__value">
+                        3500
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        2600
+                      </div>
+                      <div class="table__value">
+                        4560
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__bodyRow">
+                  <td class="table__bCell table__ptab">
+                    <div class="table__sign">
+                      <a href="#" class="table__sign_link">
+                        <div class="table__sign_image">
+                          <img src="img/square.png" alt="sign">
+                        </div>
+                        <div class="table__sing_name">
+                          Все квадратные знаки
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1300
+                      </div>
+                      <div class="table__value">
+                        1900
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1980
+                      </div>
+                      <div class="table__value">
+                        3500
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        2600
+                      </div>
+                      <div class="table__value">
+                        4560
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__bodyRow">
+                  <td class="table__bCell table__ptab">
+                    <div class="table__sign">
+                      <a href="#" class="table__sign_link">
+                        <div class="table__sign_image">
+                          <img src="img/tableSing1.png" alt="sign">
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        2954,6
+                      </div>
+                      <div class="table__value">
+                        4700
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        5500
+                      </div>
+                      <div class="table__value">
+                        7800
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        6300
+                      </div>
+                      <div class="table__value">
+                        9850
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__bodyRow">
+                  <td class="table__bCell table__ptab">
+                    <div class="table__sign">
+                      <a href="#" class="table__sign_link">
+                        <div class="table__sign_image">
+                          <img src="img/tableSing2.png" alt="sign">
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1300
+                      </div>
+                      <div class="table__value">
+                        1900
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1980
+                      </div>
+                      <div class="table__value">
+                        3500
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        2600
+                      </div>
+                      <div class="table__value">
+                        4560
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__bodyRow">
+                  <td class="table__bCell table__ptab">
+                    <div class="table__sign">
+                      <a href="#" class="table__sign_link">
+                        <div class="table__sign_image">
+                          <img src="img/tableSing3.png" alt="sign">
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1350
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        2560
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        3400
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__bodyRow">
+                  <td class="table__bCell table__ptab">
+                    <div class="table__sign">
+                      <a href="#" class="table__sign_link">
+                        <div class="table__sign_image">
+                          <img src="img/tableSing4.png" alt="sign">
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        1850
+                      </div>
+                      <div class="table__value">
+                        2700
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        3300
+                      </div>
+                      <div class="table__value">
+                        5450
+                      </div>
+                    </div>
+                  </td>
+                  <td class="table__bCell">
+                    <div class="table__values">
+                      <div class="table__value">
+                        4250
+                      </div>
+                      <div class="table__value">
+                        6770
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+          <div class="price__title poa__title">
+            Наши цены
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="price__btn btn">
+          <a class="price__btn_link btn__link" href="#">смотреть весь прайс</a>
+        </div>
+        <div class="price__download download">
+          <span>
+            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.2825 8.58468H19.7062V5.80404C19.7062 5.78671 19.7035 5.76924 19.7014 5.75151C19.7005 5.64121 19.6651 5.53278 19.5895 5.44686L14.962 0.160951C14.9606 0.159594 14.9592 0.159113 14.9583 0.157668C14.9307 0.126852 14.8986 0.101202 14.8645 0.0790529C14.8545 0.072312 14.8443 0.0666653 14.8338 0.0607123C14.8043 0.0447354 14.773 0.0312972 14.7409 0.0216236C14.7322 0.0193474 14.7243 0.0157581 14.7157 0.0134819C14.6807 0.00516514 14.6444 0 14.6077 0H3.23538C2.71611 0 2.29423 0.42236 2.29423 0.941194V8.58442H1.71802C0.975154 8.58442 0.372803 9.18655 0.372803 9.92968V16.925C0.372803 17.6674 0.975154 18.2702 1.71802 18.2702H2.29423V23.0588C2.29423 23.5777 2.71611 24 3.23538 24H18.7648C19.2836 24 19.7059 23.5777 19.7059 23.0588V18.2702H20.2822C21.0249 18.2702 21.6273 17.6678 21.6273 16.9251V9.92994C21.6274 9.1866 21.0253 8.58468 20.2825 8.58468ZM3.23538 0.941194H14.1371V5.75642C14.1371 6.01643 14.3479 6.22701 14.6077 6.22701H18.7648V8.58464H3.23538V0.941194ZM12.7698 13.7735C11.8452 13.4513 11.2418 12.9398 11.2418 12.1301C11.2418 11.1803 12.0346 10.4537 13.348 10.4537C13.9753 10.4537 14.438 10.5856 14.768 10.7344L14.4874 11.75C14.2646 11.6429 13.8682 11.4857 13.3232 11.4857C12.7781 11.4857 12.5139 11.7335 12.5139 12.0226C12.5139 12.3778 12.8278 12.5346 13.5461 12.8071C14.5286 13.1706 14.9911 13.6825 14.9911 14.4669C14.9911 15.4003 14.2726 16.1931 12.7448 16.1931C12.1091 16.1931 11.4815 16.0281 11.1676 15.8544L11.4234 14.814C11.7621 14.9872 12.2825 15.161 12.8191 15.161C13.3977 15.161 13.7028 14.9215 13.7028 14.558C13.703 14.2114 13.4388 14.0129 12.7698 13.7735ZM10.6399 15.0533V16.1107H7.16269V10.544H8.4267V15.0533H10.6399ZM3.12508 16.1107H1.68821L3.2985 13.2938L1.74577 10.5438H3.19117L3.67814 11.5597C3.84334 11.8983 3.9673 12.1705 4.09958 12.4848H4.11565C4.24815 12.1296 4.35539 11.8819 4.49537 11.5597L4.96619 10.5438H6.4031L4.83395 13.2605L6.48592 16.1102H5.03259L4.52855 15.1025C4.32243 14.7149 4.19019 14.4256 4.03322 14.1035H4.01681C3.90103 14.4256 3.76096 14.7149 3.58736 15.1025L3.12508 16.1107ZM18.7648 22.804H3.23538V18.2702H18.7648V22.804H18.7648ZM18.7733 16.1107L18.2694 15.103C18.063 14.715 17.9309 14.4261 17.7739 14.1039H17.7579C17.6421 14.4261 17.5015 14.715 17.3278 15.103L16.8659 16.1107H15.4286L17.0389 13.2938L15.4863 10.5438H16.9316L17.4192 11.5597C17.5842 11.8983 17.7078 12.1705 17.8402 12.4848H17.8567C17.9886 12.1296 18.0957 11.8819 18.2363 11.5597L18.7069 10.5438H20.1442L18.575 13.2605L20.2266 16.1102H18.7733V16.1107Z" fill="#219653"/>
+            </svg>              
+          </span>
+          <a class="navBar__download_link download_link" href="#">Скачать прайс</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="question">
+      <div class="question__parallax">
+        <div class="container">
+          <div class="question__text">
+            <div class="question__heading heading">
+              <h2 class="heading__text">Какой типоразмер выбрать?</h2>
+            </div>
+            <div class="question__subtitle">
+              Компания  ООО Дорстроймонтаж изготавливает знаки всех типоразмеров.
+              Согласно ГОСТ Р 52290-2004 типоразмеры дорожных знаков выбираются в соответствии с таблицей:
+            </div>
+            <div class="question__link">
+              <a class="question__link_elem section__link" href="#">Смотреть таблицу</a>
+            </div>
+          </div>
+          <div class="question__sign">
+            <img src="img/bigSign.png" alt="sign">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="diversity">
+      <div class="container">
+        <div class="diversity__row">
+          <div class="diversity__blockWihtImage">
+            <div class="diversity__image">
+              <img class="diversity__image_elem" src="img/colors.png" alt="image">
+            </div>
+          </div>
+          <div class="diversity__blockWithText">
+            <div class="diversity__heading heading">
+              <h2 class="heading__text diversity__heading_text">
+                В чем отличия между пленками?
+              </h2>
+            </div>
+            <div class="diversity__text text">
+              По ГОСТу есть несколько типов (классов) светоотражающих пленок отличающихся техническими характеристиками (в основном по светоотражению и сроку службы) и местом установки знаков.
+            </div>
+            <div class="diversity__link">
+              <a href="#" class="diversity__link_elem section__link">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section__padding">
+    <div class="qualities">
+      <div class="container">
+        <div class="qualities__heading heading">
+          <h2 class="heading__text">
+            Почему стоит выбрать нас?
+          </h2>
+        </div>
+      </div>
+      <div class="qualities__blockScroll blockScroll">
+        <div class="qualities__box">
+          <div class="qualities__cells">
+            <div class="qualities__cell">
+              <div class="qCell__image">
+                <img class="qCell__image_elem" src="img/quality1.png" alt="qualiti">
+              </div>
+              <div class="qCell__text">
+                <div class="qCell__title">
+                  Высокое качество
+                </div>
+                <div class="qCell__subtitle">
+                  Контролируем качество продукции на всех этапах производства
+                </div>
+              </div>
+            </div>
+            <div class="qualities__cell">
+              <div class="qCell__image">
+                <img class="qCell__image_elem" src="img/quality2.png" alt="qualiti">
+              </div>
+              <div class="qCell__text">
+                <div class="qCell__title">
+                  Изготавливаем по ГОСТу
+                </div>
+                <div class="qCell__subtitle">
+                  Вся продукция соответствует нормам ГОСТ и требованиям ГИБДД
+                </div>
+              </div>
+            </div>
+            <div class="qualities__cell">
+              <div class="qCell__image">
+                <img class="qCell__image_elem" src="img/quality3.png" alt="qualiti">
+              </div>
+              <div class="qCell__text">
+                <div class="qCell__title">
+                  Сертификат
+                </div>
+                <div class="qCell__subtitle">
+                  Вся  продукция имеет сертификат "Международный стандарт качества"
+                </div>
+              </div>
+            </div>
+            <div class="qualities__cell">
+              <div class="qCell__image">
+                <img class="qCell__image_elem" src="img/quality4.png" alt="qualiti">
+              </div>
+              <div class="qCell__text">
+                <div class="qCell__title">
+                  Оперативность
+                </div>
+                <div class="qCell__subtitle">
+                  Благодаря отлаженному производству, изготавливаем более тысячи знаков в день
+                </div>
+              </div>
+            </div>
+            <div class="qualities__cell">
+              <div class="qCell__image">
+                <img class="qCell__image_elem" src="img/quality5.png" alt="qualiti">
+              </div>
+              <div class="qCell__text">
+                <div class="qCell__title">
+                  Гибкая система скидок
+                </div>
+                <div class="qCell__subtitle">
+                  Для постоянных заказчиков и крупных партнеров готовы предложить систему скидок и индивидуальные условия сотрудничества
+                </div>
+              </div>
+            </div>
+            <div class="qualities__cell">
+              <div class="qCell__image">
+                <img class="qCell__image_elem" src="img/quality6.png" alt="qualiti">
+              </div>
+              <div class="qCell__text">
+                <div class="qCell__title">
+                  Гарантия
+                </div>
+                <div class="qCell__subtitle">
+                  На все изделия предоставляется гарантия
+                </div>
+              </div>
+            </div>
+            <div class="qualities__cell">
+              <div class="qCell__image">
+                <img class="qCell__image_elem" src="img/quality7.png" alt="qualiti">
+              </div>
+              <div class="qCell__text">
+                <div class="qCell__title">
+                  Доставка
+                </div>
+                <div class="qCell__subtitle">
+                  Доставка дорожных знаков осуществляется по всей территории России
+                </div>
+              </div>
+            </div>
+            <div class="qualities__cell">
+              <div class="qCell__image">
+                <img class="qCell__image_elem" src="img/quality8.png" alt="qualiti">
+              </div>
+              <div class="qCell__text">
+                <div class="qCell__title">
+                  Монтаж
+                </div>
+                <div class="qCell__subtitle">
+                  В индивидуальном порядке готовы оказать услуги по монтажу дорожных знаков
+                </div>  
+              </div>
+            </div>
+            <div class="qualities__cell">
+              <div class="qCell__image">
+                <img class="qCell__image_elem" src="img/quality9.png" alt="qualiti">
+              </div>
+              <div class="qCell__text">
+                <div class="qCell__title">
+                  Участвуем в госзакупках
+                </div>
+                <div class="qCell__subtitle">
+
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="poa__title qualities__title">
+            Преимущества
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="about">
+      <div class="container">
+        <div class="about__row">
+          <div class="about__blockWihtImage">
+            <div class="about__image">
+              <img class="about__image_elem" src="img/bgAboutUs.png" alt="image">
+              <div class="about__image_absolute">
+                <img class="about__image_absoluteElem" src="img/about-logo.png" alt="image">
+              </div>
+            </div>
+          </div>
+          <div class="about__blockWithText">
+            <div class="about__heading heading">
+              <h2 class="heading__text">
+                О нас?
+              </h2>
+            </div>
+            <div class="about__text text">
+              Компания ООО Дорстроймонтаж занимается изготовлением дорожных знаков всех видов. Здесь вы можете заказать дорожные знаки II и III типоразмеров со светоотражающей поверхностью из световозвращающих пленок типа А, Б или В, а также знаки индивидуального проектирования.
+              Грамотно налаженное производство позволяет изготавливать и доставлять качественную продукцию в максимально короткие сроки.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__links footer__links_block1">
+          <div class="footer__link">
+            <a href="#" class="footer__link_elem">Cтандартные дорожные знаки</a>
+          </div>
+          <div class="footer__link">
+            <a href="#" class="footer__link_elem">Cветодиодные дорожные знаки</a>
+          </div>
+          <div class="footer__link">
+            <a href="#" class="footer__link_elem">Заградительные светодиодные знаки</a>
+          </div>
+          <div class="footer__link">
+            <a href="#" class="footer__link_elem">Временные дорожные знаки</a>
+          </div>
+          <div class="footer__link">
+            <a href="#" class="footer__link_elem">Знаки пожарной безопасности</a>
+          </div>
+        </div>
+        <div class="footer__links footer__links_block2">
+          <div class="footer__link">
+            <a href="#" class="footer__link_elem">Прайс</a>
+          </div>
+          <div class="footer__link">
+            <a href="#" class="footer__link_elem">Информация</a>
+          </div>
+          <div class="footer__link">
+            <a href="#" class="footer__link_elem">Доставка</a>
+          </div>
+          <div class="footer__link">
+            <a href="#" class="footer__link_elem">Политика конфиденциальности</a>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__address">
+            Адрес:
+            <div>
+              г.  Пенза, ул. Космодемьянской, 5
+            </div>
+          </div>
+          <div class="footer__number">
+            Телефон:
+            <a class="footer__number_link footer__contact_link" href="tel:89999999999">8 (8412) 71-03-30, 25-70-04</a>
+          </div>
+          <div class="footer__mail">
+            E-mail:
+            <a class="footer__mial_link footer__contact_link" href="mailto:info@dsm58.ru">info@dsm58.ru</a>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="footer__logo">
+            <a href="index.html"><img class="footer__logo_elem" src="img/logo.png" alt="logo"></a>
+          </div>
+          <div class="footer__copy">
+            © 2019 ДорСтройМонтаж.
+          </div>
+          <div class="footer__dev">
+            Разработка сайта - onlinebees.ru
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const modal =document.getElementById('modal');
+    const btn = document.getElementById("open");
+    const span = document.getElementById('close');
+
+    btn.onclick = function() {
+        modal.style.display = "flex";
+    }
+
+    span.onclick = function() {
+        modal.style.display ="none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal){
+            modal.style.display = "none";
+        }
+    }
+  </script>
+<script type="text/javascript" src="/js/common.js"></script></body>
+</html>
